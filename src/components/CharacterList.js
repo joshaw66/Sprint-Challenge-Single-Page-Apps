@@ -4,7 +4,7 @@ export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
 
   useEffect(() => {
-    axios.get('https://rickandmortyapi.com/api/character/').then(response=>{
+    axios.get('https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/').then(response=>{
 
       setCharacters(response.data.results)
 })
