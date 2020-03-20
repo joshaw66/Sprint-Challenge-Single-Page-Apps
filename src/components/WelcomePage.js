@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function WelcomePage() {
+function WelcomePage() {
   return (
     <section className="welcome-page">
       <header>
@@ -15,3 +15,5 @@ export default function WelcomePage() {
     </section>
   );
 }
+
+export default WelcomePage;

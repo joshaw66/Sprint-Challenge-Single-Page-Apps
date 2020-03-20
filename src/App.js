@@ -5,7 +5,7 @@ import WelcomePage from "./components/WelcomePage.js";
 import { Route } from 'react-router-dom'
 import SearchForm from "./components/SearchForm.js";
 
-export default function App() {
+function App() {
   return (
     <main data-testid='app'>
       <Header />
@@ -15,3 +15,5 @@ export default function App() {
     </main>
   );
 }
+
+export default App;

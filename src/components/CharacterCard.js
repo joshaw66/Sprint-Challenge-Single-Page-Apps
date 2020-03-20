@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CharacterCard(props) {
+function CharacterCard(props) {
   return (
   <header>
     <img src = {props.character.image}/>
@@ -12,3 +12,5 @@ export default function CharacterCard(props) {
   </header>
   );
 }
+
+export default CharacterCard;

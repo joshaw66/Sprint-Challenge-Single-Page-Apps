@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CharacterCard from "./CharacterCard";
 import axios from "axios";
 
-export default function CharacterList() {
+function CharacterList() {
   const[characters,setCharacters] = useState([])
 
   useEffect(() => {
@@ -17,10 +17,12 @@ export default function CharacterList() {
 
   return (
     <div className="CharacterCard">
-      {CharacterList.map(character => (
+      {characters.map(character => (
         <CharacterCard key ={character.id} character={character}/>
       ))}
       <div className = "CharacterCard"></div>
     </div> 
   );
 }
+
+export default CharacterList;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 
-export default function SearchForm() {
+function SearchForm() {
  
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
@@ -51,3 +51,5 @@ export default function SearchForm() {
   ))}
   </div>
   )}
+
+  export default SearchForm;
