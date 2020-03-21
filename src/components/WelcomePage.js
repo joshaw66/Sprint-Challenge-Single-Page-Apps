@@ -1,18 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 
+const HeaderStyle = styled.div`
+  text-align: center;
+  margin: 2%;
+`
+const Header1Style = styled.div`
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2%;
+`
+const PageStyle = styled.div`
+  
+`
+
+
 function WelcomePage() {
   return (
-    <section className="welcome-page">
-      <header>
-        <h1>Welcome to the home of Pickle Rick and Squanchy</h1>
+    <PageStyle>
+      <HeaderStyle>
+        <Header1Style>Welcome to the home of Pickle Rick and Squanchy</Header1Style>
         <img
           className="main-img"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-          alt="rick"
-        />
-      </header>
-    </section>
+          alt="rick">
+        </img>
+      </HeaderStyle>
+    </PageStyle>
   );
 }
 
