@@ -24,14 +24,19 @@ const Button = styled.div`
 const StyleLink = styled(Link)`
   text-decoration: none; 
   color: black;
-
 `
+const RickHeader = styled.div`
+  text-align: center;
+  padding: 3%;
+  font-size: 2rem;
+  color: lightblue;
+  `
 
 function Header() {
   return (
     <header
     >
-      <h1>The Rick and Morty MultiVerse!</h1>
+      <RickHeader>THE RICK AND MORTY MULTIVERSE DATABASE</RickHeader>
 
     <Navigation>
     <StyleLink to='/'><Button>Home</Button></StyleLink>

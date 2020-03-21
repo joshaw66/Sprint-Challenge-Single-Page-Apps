@@ -23,6 +23,11 @@ const H1Style = styled.div`
   text-shadow: 1px 1px black;
 `
 
+const EliminateButton = styled.div`
+  text-align: center;
+  margin: 3%; 
+`
+
 
 function SearchForm() {
  
@@ -46,14 +51,15 @@ function SearchForm() {
 
   return (
     <div>
+      <EliminateButton>
       <input
         id="name" 
         type="text" 
         name="textfield" 
-        placeholder="Search"
+        placeholder="Eliminate Target"
         value={query} 
         onChange={handleInputChange}
-      />
+      /></EliminateButton>
   
     {data.map((character => {
   
