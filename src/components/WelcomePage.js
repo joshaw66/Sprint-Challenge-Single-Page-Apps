@@ -12,7 +12,6 @@ const Header1Style = styled.div`
   color: white;
 `
 const PageStyle = styled.div`
-  
 `
 
 
